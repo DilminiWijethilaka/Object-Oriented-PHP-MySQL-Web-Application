@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ccffcc, #f0fff0, #ffffff);
+            background-repeat: no-repeat; /* Light Green to Lighter Green to White Gradient */
+            color: #333; /* Dark Text Color */
+        }
+
+        
+       
+
+        form {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333; /* Dark Text Color */
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+        }
+
+        td {
+            padding: 10px;
+            text-align: right;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #33cc33; /* Light Green Button Color */
+            color: #fff; /* White Text */
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #28a428; /* Slightly Darker Green on Hover */
+        }
+    </style>
+</head>
+<body>
+
+    
+    <form method="post" action="register.html">
+        <center>
+            <h1>Student Login</h1>
+        </center>
+        <table align="center">
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Login"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <header>
+        <div class="header-container">
+            <h1>Welcome to Python Institute  for Advance Technologe</h1>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about_us.html">About Us</a>
+                <a href="admin_login.html">Administrator</a>
+            </nav>
+        </div>
+    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses at Python Institute</title>
+    <style>
+        /* Your existing styles remain unchanged */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ccffcc, #f0fff0, #ffffff); /* Light Green to Lighter Green to White Gradient */
+            color: #333; /* Dark Text Color */
+        }
+
+        
+        header {
+            background-color: #aaffaa;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+
+            background: linear-gradient(to right, #aaffaa, #ffffff);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            margin-left: -1px;
+            font-size: 20px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        nav a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover::before {
+            background-color: #333;
+        }
+
+        /* Add additional styles as needed */
+        .section-container {
+            padding: 20px;
+        }
+
+        .h2p1 {
+            background-color: #aaffaa; /* Light Green Background */
+            color: #333; /* Dark Text Color */
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: fadeIn 1s forwards;
+        }
+
+        .course-container {
+            background-color: #fff; /* White Course Container Background */
+            border: 1px solid #ddd; /* Light Gray Border */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            animation: slideIn 1s forwards;
+        }
+
+        .course-container h3 {
+            color: #333; /* Dark Text Color */
+        }
+
+        .course-container p {
+            color: #555; /* Dark Gray Text */
+        }
+
+        .course-container ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #555; /* Dark Gray Text */
+        }
+
+        .course-container a {
+            color: #66ff66; /* Light Green Link Color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <section class="section-container">
+        <div class="h2p1"><h2>Explore Our Courses</h2></div>
+
+        <div class="course-container">
+            <h3>Computer Science</h3>
+            <ul>
+                <li>Algorithms and Data Structures</li>
+                <li>Software Development</li>
+                <li>Database Management</li>
+            </ul>
+            <p>Embark on a journey into the world of Computer Science. <a href="computer_science_details.html">View More</a></p>
+        </div>
+
+        <div class="course-container">
+            <h3>Physics</h3>
+            <ul>
+                <li>Classical Mechanics</li>
+                <li>Electromagnetism</li>
+                <li>Quantum Theory</li>
+            </ul>
+            <p>Dive deep into the realm of Physics. <a href="physics_details.html">View More</a></p>
+        </div>
+
+        <div class="course-container">
+            <h3>Biology</h3>
+            <ul>
+                <li>Molecular Biology</li>
+                <li>Ecology</li>
+                <li>Genetics</li>
+            </ul>
+            <p>Immerse yourself in the study of life through our Biology courses. <a href="biology_details.html">View More</a></p>
+        </div>
+
+        <!-- Add more course containers as needed -->
+
+    </section>
+
+    <!-- Additional sections can be added here -->
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Institute - Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ccffcc, #f0fff0, #ffffff); /* Light Green to Lighter Green to White Gradient */
+            color: #333; /* Dark Text Color */
+        }
+
+        .section-container {
+            padding: 20px;
+        }
+
+        .h2p1 {
+            background-color: #aaffaa; /* Light Green Background */
+            color: #333; /* Dark Text Color */
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: fadeIn 1s forwards;
+        }
+
+        section {
+            padding: 20px;
+            flex-grow: 1; /* This allows the section to grow and fill the remaining space */
+            background-color: #fff; /* White background */
+            border: 1px solid #ddd; /* Light Gray Border */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0; /* Adjust spacing */
+        }
+
+        h2 {
+            color: #333; /* Dark Text Color */
+            padding-bottom: 5px;
+            margin-top: 25px;
+            font-size: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #333; /* Dark Text Color */
+        }
+
+        input,
+        textarea {
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #33cc33; /* Light Green Button Color */
+            color: #fff; /* White Text */
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #28a428; /* Slightly Darker Green on Hover */
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        p {
+            color: #fff; /* White Text */
+        }
+
+        a {
+            color: #fff; /* White Text */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #333; /* Dark Text Color */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section-container">
+        <div class="h2p1"><h2>Contact Us</h2></div>
+
+        <section>
+            <form method="post" action="contact.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer>
+            <p style="color: black;">Follow us on : <a style="color: #33cc33;" href="facebook_link"><strong>Facebook</strong></a> | <a style="color: #33cc33;" href="twitter_link"><strong>Twitter</strong></a> | <a style="color: #33cc33;" href="instagram_link"><strong>Instagram</strong></a></p>
+            <p style="color: black;">Tele-No : <a style="color: blue;" href=""><strong>+94 703156782</strong></a> | <a style="color: blue;" href=""><strong>+94 777334122</strong></a> | <a style="color: blue;" href=""><strong>+94 771213456</strong></a>
+        </footer>
+    </section>
+
+</body>
+</html>
